@@ -19,8 +19,8 @@ public class DroneControllerFull : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
-        rb.drag = 1.5f;
-        rb.angularDrag = 2f;
+        rb.linearDamping = 1.5f;
+        rb.angularDamping = 2f;
     }
 
     void FixedUpdate()
